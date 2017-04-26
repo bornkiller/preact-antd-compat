@@ -1,0 +1,19 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "iOS 10"]
+      },
+      "modules": false,
+      "loose": true
+    }],
+    "stage-3",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-runtime",
+    ["transform-react-jsx"],
+//    {"pragma": "h"}
+    ["import", { "libraryName": "antd", "style": "css" }]
+  ]
+}
